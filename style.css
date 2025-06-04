@@ -1,0 +1,15 @@
+body {
+    background-color: #f0f8ff; /* Warna latar biru muda */
+    font-family: sans-serif;
+    text-align: center; /* Membuat semua teks jadi di tengah */
+    margin: 40px;
+}
+
+h1 {
+    color: #005a9c; /* Warna biru tua untuk judul */
+}
+
+p {
+    color: #333333; /* Warna abu-abu gelap untuk paragraf */
+    font-size: 18px;
+}
