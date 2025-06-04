@@ -1,18 +1,208 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>99realstudiowebsite</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>99real.studio - Sunday Gear</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    body {
+      background-color: #0f0f0f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #0a0a0a;
+    }
+    header h1 {
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1549921296-3a6bde87183e') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.65);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero h2 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #ccc;
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+    .hero .btn {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      margin: 0 10px;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+    .hero .btn:hover {
+      background-color: #e3e3e3;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h3 {
+      font-size: 32px;
+      margin-bottom: 24px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+    .product {
+      background-color: #1a1a1a;
+      padding: 16px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .product:hover {
+      transform: translateY(-4px);
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+    .product h4 {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    .product p {
+      color: #ccc;
+      font-size: 16px;
+    }
+    .tokopedia-link {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .tokopedia-link a {
+      background-color: #03ac0e;
+      color: #ffffff;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    .tokopedia-link a:hover {
+      background-color: #02890b;
+    }
+    footer {
+      background-color: #0a0a0a;
+      padding: 40px 20px;
+      text-align: center;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>99real.studio</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#produk">Produk</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#komunitas">Komunitas</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
 
-    <h1>Selamat Datang di 99realstudiowebsite</h1>
-    <p>Website ini sedang dalam tahap pengembangan.</p>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Sunday gear For Cars Enthusiasts</h2>
+      <p>Designed for those who live for the drive. Minimal streetwear with automotive soul.</p>
+      <a href="#produk" class="btn">Lihat Koleksi</a>
+      <a href="#tentang" class="btn">Tentang Brand</a>
+    </div>
+  </section>
 
-    <img src="IMG_1447.HEIC (1).jpg" alt="Oversized Tee" width="300">
+  <section id="produk" class="section">
+    <h3>Koleksi Produk</h3>
+    <div class="product-grid">
+      <div class="product">
+        <img src="IMG-1447-HEIC (1).jpg" alt="Oversized shirt" />
+        <h4> Porsche Oversized Tee - White</h4>
+        <p>Rp269.520</p>
+      </div>
+    </div>
+    <div class="tokopedia-link">
+      <a href="https://www.tokopedia.com/99realstudio/product?utm_source=salinlink&utm_medium=share&utm_campaign=Shop-2040195-7496171077902567927-Semua%20Produk-290525-no_image" target="_blank" rel="noopener noreferrer">Beli Semua Produk di Tokopedia</a>
+    </div>
+  </section>
 
+  <section id="tentang" class="section">
+    <h3>Tentang Brand</h3>
+    <p style="text-align:center; max-width: 800px; margin: 0 auto; color: #ccc;">
+      99real.studio adalah brand streetwear otomotif yang lahir dari semangat Sunday morning drive – untuk para pecinta mobil sport, supercar, dan gaya hidup jalanan premium.
+    </p>
+  </section>
+
+  <section id="komunitas" class="section">
+    <h3>Komunitas</h3>
+    <p style="text-align:center; max-width: 800px; margin: 0 auto; color: #ccc;">
+      Kami terinspirasi dari koneksi antara mobil dan gaya hidup. Komunitas kami berkumpul setiap Minggu pagi untuk menikmati drive santai, ngopi bareng, dan berbagi semangat otomotif.
+    </p>
+  </section>
+
+  <footer id="kontak">
+    <p>Hubungi kami via Instagram @99real.studio atau WhatsApp.</p>
+    <p>© 2025 99real.studio. All rights reserved.</p>
+  </footer>
 </body>
 </html>
-
