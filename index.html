@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,10 +10,9 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }
-    html, body {
-      height: 100%;
       font-family: 'Space Grotesk', sans-serif;
+    }
+    body {
       background: url('backgroundwebsite.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #ffffff;
@@ -24,8 +23,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
-      background-color: rgba(0, 0, 0, 0.6); /* transparan */
-      backdrop-filter: blur(4px);
+      background-color: rgba(10,10,10,0.8); /* SOLID BLACK */
     }
     header h1 {
       font-size: 24px;
@@ -52,7 +50,10 @@
     .hero::after {
       content: '';
       position: absolute;
-      inset: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       background-color: rgba(0, 0, 0, 0.65);
       z-index: 1;
     }
@@ -89,7 +90,7 @@
       padding: 60px 20px;
       max-width: 1200px;
       margin: auto;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0,0,0,0.6);
       border-radius: 16px;
     }
     .section h3 {
@@ -144,12 +145,12 @@
       background-color: #02890b;
     }
     footer {
-      background-color: rgba(0, 0, 0, 0.85);
+      background-color: #000000; /* SOLID BLACK */
       padding: 40px 20px;
       text-align: center;
       color: #ccc;
       font-size: 14px;
-      margin-top: 60px;
+      margin-top: 0px;
     }
   </style>
 </head>
